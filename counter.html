@@ -2,20 +2,31 @@
 <html lang="ja">
 <head>
    <meta charset="utf-8">
+   <script type="text/javascript">
+   </script>
    <title>JavaScript test</title>
+   
 </head>
 <body>
-   <script>
-      var count = 0;
-      
+   <script type="text/javascript">
+      var count=0;
 
+      function +button(btnno){
+	 if(btnno != 10){
+            return btnno++;
+	 }else return btnno;
+      }
+             
+
+      document.write(count);
 
    </script>
 
    <from action="#">
-      <input type="button" name="+btn" value="+" onclick="btnClick(this)"/>
+      <input type="button" name="+btn" value="+" onclick="+button(count)"/>
       <input type="button" name="-btn" value="-" onclick="btnClick(this)"/>
       <input type="button" name="rebtn" value="reset" onclick="btnClick(this)"/>
    </from>
+
 </body>
 </html>
