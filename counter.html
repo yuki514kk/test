@@ -2,24 +2,22 @@
 <html lang="ja">
 <head>
    <meta charset="utf-8">
-   <title>JavaScript test</title>
-   
+   <title>JavaScript test</title>  
+   <script type="text/javascript" src="code.js"></script>
 </head>
 <body>
-   <script type="text/javascript" language="javascript">
+   <script language="JavaScript" type="text/javascript" src="code.js">
    <!--
-             
-      var count = 0;
-      document.write(count);
-      
+      var def_count = 0;
+
    // -->
    </script>
 
-   <from action="#">
-      <input type="button" name="+btn" value="+" onclick="+button(count)"/>
-      <input type="button" name="-btn" value="-" onclick="btnClick(this)"/>
-      <input type="button" name="rebtn" value="reset" onclick="btnClick(this)"/>
-   </from>
-
-</body>
+   <div id="num">0</div>
+   <form>
+      <input type="button" name="plusbtn" value="+" onclick="plus('count')"/>
+      <input type="button" name="minusbtn" value="-" onclick="minus('count')"/>
+      <input type="button" name="resetbtn" value="reset" onclick="reset('count')"/>
+   </form>
+      </body>
 </html>
