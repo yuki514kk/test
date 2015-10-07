@@ -9,7 +9,7 @@ function plus() {
 
 }
 
-function minus(str) {
+function minus() {
    mokuteki = document.getElementById("num");
    count = mokuteki.innerHTML;
    now_count = parseInt(count);
@@ -19,7 +19,7 @@ function minus(str) {
    }
 }
 
-function reset(str) {
-
-
+function reset(count) {
+   mokuteki = document.getElementById("num");
+   mokuteki.innerHTML = 0;
 }
